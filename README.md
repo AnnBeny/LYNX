@@ -1,3 +1,5 @@
+## Seznam skriptů
+
 ### control_row_counts.py
 spočítá počet řádků na vzorek a run pro xlsx soubory cna, snv, rearrangement, translocations u DLBCL
 

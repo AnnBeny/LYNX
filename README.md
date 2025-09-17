@@ -32,7 +32,7 @@ spustí všechny skripty pro CLL/DLBCL najednou
 
 ## Postup
 - vytvořit seznam vzorků **seznam_*.csv**
-    |Run|Sample|
+- |Run|Sample|
 - v terminálu zkontrolovat neviditelné znaky, které tam přidává excel **cat -A seznam_*.csv**
 - a vymazat je **sed -i '1s/^\xEF\xBB\xBF//' seznam_*.csv**
 - stáhnout soubory z Lynx serveru skriptem download_*_*.sh

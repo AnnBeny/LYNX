@@ -7,7 +7,7 @@ spočítá počet řádků na vzorek a run pro xlsx soubory cna, snv, rearrangem
 ### cytoBand_hg38.txt
 souřadnice cytogenetických pásem hg38, používané pro mapování genomových variant na chromozomální oblasti typu 1p36.33 nebo 5q21.1
 
-## download_*.sh
+### download_*.sh
 **stáhnou zdrojové soubory ze serveru LYNX - kluci dají přístup na keeper@lynx.ceitec.muni.cz**
 - download_cns_CLL.sh
 - download_snv_CLL.sh
@@ -15,17 +15,17 @@ souřadnice cytogenetických pásem hg38, používané pro mapování genomovýc
 - download_snv_DLBCL.sh
 - download_trans_prest_dlbcl.sh
 
-## merge_*.py
+### merge_*.py
 **spojí všechny soubory jednotlivých vzorků do jednoho souboru**
 - merge_cna_CLL.py
 - merge_snv_CLL.py
 - merge_cna_DLBCL.py
 - merge_snv_DLBCL.py
 
-## separate_*.py
+### separate_*.py
 - vezme všechny stažené soubory pro přestavby/translokace
 
-## RUN_*.sh
+### RUN_*.sh
 **spustí všechny skripty pro CLL/DLBCL**
 
 ---

@@ -1,0 +1,43 @@
+# venv
+venv/
+.env/
+
+# temp files
+*.tmp
+*.bak
+*~
+*.log
+
+# exports
+merged_data_*.xlsx
+rearrangement_*.xlsx
+translocations_*.xlsx
+*_old.xlsx
+*_temp.xlsx
+
+# lists
+*.csv
+seznam_*.ods
+*_seznam.xlsx
+seznam_*.xlsx
+*samples*.xlsx
+
+# data
+CLL/
+DLBCL/
+run*/
+RUN_*/
+TRANSLOKACE_PRESTAVBA_DLBCL/
+*.xlsx
+
+# works
+*pracovni*
+
+# backups
+_*.py
+_*.sh
+
+# OS/IDE files
+.DS_Store
+*.swp
+.vscode/

@@ -26,7 +26,7 @@ spojí všechny soubory jednotlivých vzorků do jednoho souboru
 vezme všechny stažené soubory pro přestavby/translokace
 
 ### RUN_*.sh
-spustí všechny skripty pro CLL/DLBCL
+spustí všechny skripty pro CLL/DLBCL najednou
 
 ---
 

@@ -25,6 +25,7 @@ seznam_*.xlsx
 # data
 CLL/
 DLBCL/
+ALL/
 run*/
 RUN_*/
 TRANSLOKACE_PRESTAVBA_DLBCL/

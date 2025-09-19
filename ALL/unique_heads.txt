@@ -1,3 +1,0 @@
-     74 chromosome	start	end	gene	log2	baf	cn	cn1	cn2	depth	loh	probes	var num	weight
-      1 chromosome	start	end	gene	log2	baf	cn	cn1	cn2	depth	probes	weight
-     34 comments	chromosome	start	end	gene	log2	baf	cn	cn1	cn2	depth	loh	probes	var num	weight

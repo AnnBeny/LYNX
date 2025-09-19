@@ -1,7 +1,7 @@
 #!/bin/bash
 
-DEST="/mnt/hdd2/anna/LYNX/TRANSLOKACE_PRESTAVBA_DLBCL"
-OUTFILE="$DEST/translocations_dlbcl.txt"
+DEST="/mnt/hdd2/anna/LYNX/TRANSLOKACE_PRESTAVBA_ALL"
+OUTFILE="$DEST/translocations_all.txt"
 
 > "$OUTFILE"
 

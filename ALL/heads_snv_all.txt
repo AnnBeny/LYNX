@@ -1,0 +1,321 @@
+Soubor /mnt/hdd2/anna/LYNX/ALL/Navrk11-reanal_ALL_Jel.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Navrk11-reanal_ALL_Pag.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Navrk14-reanal_ALL_Kra.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Navrk14-reanal_ALL_Meis.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Navrk14-reanal_ALL_Trav.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Navrk15b-reanal_T-LL_Nov.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Navrk17-reanal_ALL_20-243.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Navrk17-reanal_ALL_20-248.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Navrk20-reanal_ALL_20-221.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Navrk20-reanal_ALL_20-290.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Navrk21-reanal_ALL_20-312.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Navrk25-reanal_21-38.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Navrk25-reanal_21-40.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Navrk26-reanal_ALL_0257.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Navrk26-reanal_ALL_0259.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Navrk27-reanal_T-LBL_21-59.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Navrk28-reanal_ALL_261opak.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Navrk29re-reanal_ALL_264.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Navrk31-reanal_ALL_21-197.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Navrk31-reanal_T-LBL_MB04.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Navrk33-reanal_ALL_21-197_opak.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Navrk34-reanal_x_0052.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Navrk36-reanal_ALL_21-274.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Navrk36-reanal_ALL_21-280.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Navrk37-reanal_LGL_005.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run102_ALL-24-378.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run105_ALL25-39.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run108_ALL-25-75.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run111_ALL25-101.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run111_ALL25-102.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run112_GEN_25-627.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run113_ALL_0237.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run114_ALL25-158.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run114_test_ALL25-158.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run116_ALL_214-L1-cfDNA.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run116_ALL_214-L1-sed.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run116_ALL_233-L1-cfDNA.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run116_ALL_233-L1-sed.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run116_ALL_239-TK1.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run117_ALL_25-216.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run117_ALL_25_215.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run117_ALL_25_240.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run117_reanal_ALL_25-216.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run117_reanal_ALL_25_215.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run117_reanal_ALL_25_240.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run38_NHL20-300.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run39_10370_FFPE.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run39_ALL_176.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run42_6653_FFPE.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run42_ALL_Trum_likv.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run43_ALL_22-52.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run44_ALL_281.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run44_ALL_282.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run47_ALL_289.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run47_x0065.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run47_x0070B.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run49-dobry_10370_FFPE_v2.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run49-dobry_ALL_282_v2.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run50-dobry_ALL_0295.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run52_ALL_0302.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run52_ALL_0303.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run53_ONK-22-5603.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run55_ALL_317.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run56_ALL-23-33.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run58_ALL_23-88.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run60_ALL_23-109.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run62_ALL23-150.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run64_ALL23-169.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomad_af,gnomad_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run66_ALL_23_244.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run67-correct_ALL23-245.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run67-correct_ALL23-274.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run68_ALL23-284.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run68_MGI_ALL23-284_S145.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run69_2_reanal_ALL_282_XT_HS2.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run71_opak_ALL23-333_S1.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run72_ALL23-353_S2.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run72_ALL23-360_S3.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run75_ALL24-24.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run75_ALL24-4.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run75_GEN-24-00029.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run77_dobry_ALL24_31_processed.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run77_dobry_ALL24_35_processed.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run78_ALL24-59_processed.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run81_ALL23-353.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run84_ALL24-129.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run84_ALL24-134.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run84_GEN-24-811.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run84_merged_ALL24-129.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run84_merged_ALL24-134.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run84_merged_GEN-24-811.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run84_merged_x0112.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run84_x0112.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run86_bez_2943_22_opak2_ALL24-172.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run86_bez_2943_22_opak2_ALL24-188.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run87_ALL24-204.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run87_ALL24-205.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run89_GEN-24-1332.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run89_merge_GEN-24-1332.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run91_GEN-24-1211.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run92_diag_ALL24-239.mutect2.cons.filt.norm.vep.csv
+gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run92_diag_GEN-24-1474.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run93_ALL24-258.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run93_ALL24-263.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run93_ALL24-268.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run95_ALL24-239.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run96_ALL24-289.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+
+Soubor /mnt/hdd2/anna/LYNX/ALL/Run96_ALL24-308.mutect2.cons.filt.norm.vep.csv
+comments,gene_symbol,genome_build,Chromosome,Start_Position,Variant_Classification,Variant_Type,Reference_Allele,Tumor_Seq_Allele2,HGVSc,HGVSp,feature_type,Transcript_ID,MANE_SELECT,MANE_PLUS_CLINICAL,Exon_Number,tumor_DP,tumor_AD_ref,tumor_AD_alt,tumor_AF,normal_DP,normal_AD_ref,normal_AD_alt,normal_AF,strand_bias,alt_transcripts,Codons,Existing_variation,BIOTYPE,CANONICAL,SIFT,PolyPhen,clinvar,IMPACT,af,eur_af,gnomadg_af,gnomadg_nfe_af,max_af,max_af_pops,pubmed
+

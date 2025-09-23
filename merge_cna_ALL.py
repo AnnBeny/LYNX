@@ -26,7 +26,7 @@ print(f"Found {len(files)} files in {folder}")
 
 # sort of columns
 columns_sort = ['run', 'sample', 'diagnosis', 'comments', 'chromosome', 'start', 'end', 'cyt_start', 'cyt_end', 'length',
-                 'gene', 'log2', 'baf', 'cn', 'cn1', 'cn2', 'depth', 'loh', 'probes', 'var num', 'weight'
+                'gene', 'log2', 'baf', 'cn', 'cn1', 'cn2', 'depth', 'loh', 'probes', 'var num', 'weight'
 ]
 
 # ---- Merge files ----

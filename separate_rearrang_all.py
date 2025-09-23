@@ -14,11 +14,13 @@ output_file = Path(__file__).parent / f'merged_data_rearrangement_all_{timestamp
 sample_table = pd.read_csv(seznam, sep=',', encoding='utf-8', names=['Run', 'Sample'], header=None, dtype=str)
 files = list(folder.glob('*.xlsx'))
 
+print(f'Found files: {files}')
+
 # sort of columns
-columns_sort = ['run', 'sample', 'diagnosis', 'comments', 'in FASTQs', 'duplicated', 'mapped', 'on target',	
-                'usable', 'rearrangement class', 'locus', 'V gene',	'D gene', 'J gene',	
-                '%locus', '%class', 'fragments', 'locus sum', 'segmentation', 'junction', 'junction nt seq',	
-                'sequence context',]
+columns_sort = ['run', 'sample', 'diagnosis', 'comments', 'in FASTQs', 'duplicated', 'mapped', 'on target',
+                'usable', 'rearrangement class', 'locus', 'V gene', 'D gene', 'J gene',
+                '%locus', '%class', 'fragments', 'locus sum', 'segmentation', 'junction', 'junction nt seq',
+                'sequence context']
 
 # --- Merge all sheets from the first file ---
 merged_df = pd.DataFrame()
@@ -51,6 +53,7 @@ for file in files:
             sheet_base = sheet_base[:-3]
         if sheet_base in samples:
             sheet_df = pd.read_excel(xls, sheet_name=sheet_name)
+            print(f'Processing sheet: {sheet_df.columns} from file: {file.name}')
             # Odstranit HTML tagy ze všech buněk
             def strip_html(val):
                 if isinstance(val, str):
@@ -58,6 +61,7 @@ for file in files:
                 return val
             #sheet_df = sheet_df.applymap(strip_html)
             sheet_df = sheet_df.map(strip_html)
+            print(f'Columns after HTML stripping: \n {sheet_df.columns}')
             # Přidat sloupce sample, diagnosis a run
             sheet_df['sample'] = sheet_base
             sheet_df['diagnosis'] = 'ALL'
@@ -65,6 +69,16 @@ for file in files:
             sheet_df['V gene'] = ''
             sheet_df['D gene'] = ''
             sheet_df['J gene'] = ''
+            print(f'Columns after adding sample, diagnosis, run: \n {sheet_df.columns}')
+
+            # Rename columns to match the desired output
+            sheet_df = sheet_df.rename(columns={'%locus': '%'})
+            print(f'Columns after renaming: \n {sheet_df.columns}')
+
+            # Change column types to string to avoid issues with NaN
+            #sheet_df['comments'] = sheet_df['comments'].astype(str)
+            sheet_df['comments'] = sheet_df['comments'].apply(lambda x: str(x) if pd.notnull(x) else '')
+            print(f'Comments column types after conversion: {sheet_df["comments"].dtype}')
 
             # Function to extract gene type based on position 4
             def extract_gene_type(gene, gene_type):
@@ -96,19 +110,22 @@ for file in files:
                 sheet_df['V gene'] = sheet_df['V gene'].fillna(partner_V)
                 sheet_df['D gene'] = sheet_df['D gene'].fillna(partner_D)
                 sheet_df['J gene'] = sheet_df['J gene'].fillna(partner_J)
+            print(f'Columns after processing gene and gene partner: \n {sheet_df.columns}')
 
             #print(f'filter columns: \n {sheet_df.columns}')
 
-            # Filtrovat na SV ve sloupci 11 (index 10)
+            # Filtrovat na R ve sloupci 11 (index 10)
             #if sheet_df.shape[1] > 10:
             #    sheet_df = sheet_df[sheet_df.iloc[:, 10] == 'R']
             if 'class1' in sheet_df.columns:
                 sheet_df = sheet_df[sheet_df['class1'] == 'R']
             merged_df = pd.concat([merged_df, sheet_df], ignore_index=True)
+            print(f'Merged dataframe shape: {merged_df.columns}')
             print(f'Added sheet: {sheet_name} (base: {sheet_base}) from file: {file.name}')
 
 # Do something with the merged DataFrame
 print(merged_df.head())
+print(f'Columns before merge and rename: \n {merged_df.columns}')
 
 # Rename columns
 merged_df = merged_df.rename(columns={
@@ -117,12 +134,17 @@ merged_df = merged_df.rename(columns={
     'event1': 'segmentation'
 })
 
+print(f'Columns after merge and rename: \n {merged_df.columns}')
+
 # Přeskládat sloupce: run, sample, diagnosis, ostatní
 exclude_cols = ['gene', 'gene partner', 'report','QC','clonal','class1','coord','coord partner', 'depth(s)','event2','event3','event comments','generic BAM','special BAM',]
 #cols = ['run', 'sample', 'diagnosis'] + [col for col in merged_df.columns if col not in ['run', 'sample', 'diagnosis'] + exclude_cols]
 cols = [col for col in merged_df.columns if col not in exclude_cols]
+print(f'Columns after exclusion: \n {cols}')
 cols_sort = [col for col in columns_sort if col in cols]
+print(f'Final sorted columns: \n {cols_sort}')
 final_df = merged_df[cols_sort]
+print(f'Final dataframe shape: {final_df}')
 
 # save the merged dataframe to an Excel file
 final_df.to_excel(output_file, index=False)

@@ -1,5 +1,7 @@
-online verze excel max pocet radku 1 048 576
-- 1 run = 465 radku * 16 samplu => 140 runu
+<ul>
+<li>online verze excel max pocet radku 1 048 576
+<ul><li>1 run = 465 radku * 16 samplu => 140 runu</li></ul>
+</ul>
 
 komentáře se průběžně doplňují -> vždy aktualizovat všechny zdrojové soubory
 

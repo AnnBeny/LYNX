@@ -40,4 +40,6 @@ spustí všechny skripty pro CLL/DLBCL najednou
 - a vymazat je **sed -i '1s/^\xEF\xBB\xBF//' seznam_*.csv**
 - stáhnout soubory z Lynx serveru skriptem **download_*.sh**
 - pokud něco spadne, opravit název v seznamu vzorků seznam_*.csv
-- zjistit názvy sloupců ve stažených souborech skriptem **column.sh**, přidat chybějící sloupce do skriptu **merge_*.py**
+- zjistit názvy sloupců ve stažených souborech skriptem **column.sh**, přidat chybějící sloupce do skriptu **merge_*.py** nebo **separate_*.py**
+- spustit skript **RUN_.sh**
+- pomocí **control_*.py** skriptů zkontrolova, jestli jsou tam všechny vzorky a sedí počet řádků (ne u translokací a přestaveb)

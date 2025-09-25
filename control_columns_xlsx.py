@@ -2,7 +2,7 @@ import pandas as pd
 from pathlib import Path
 
 folder = Path(__file__).parent / 'TRANSLOKACE_PRESTAVBA_ALL'
-columns_to_check = ['comments']
+columns_to_check = ['class1']
 files = list(folder.glob('*.xlsx'))
 
 for col in columns_to_check:
@@ -18,8 +18,10 @@ for col in columns_to_check:
             #if 'class1' in df.columns:
             #    df = df[df['class1'] == 'R']
             # filtr na translocation!!!
+            #if df.shape[1] in df.columns:
+            #    df = df[df['class1'].isin(['SV', 'SV-R'])]
             if df.shape[1] in df.columns:
-                df = df[df['class1'].isin(['SV', 'SV-R'])]
+                df = df[df['class1'] == 'SV-R']
             if col in df.columns:
                 nonempty_vals = df[col].dropna()
                 nonempty_vals = nonempty_vals[nonempty_vals.astype(str).str.strip() != '']

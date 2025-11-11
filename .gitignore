@@ -16,7 +16,7 @@
 !scripts/**
 
 # scripts
-RUN*
+RUN*.sh
 
 # OS/IDE files
 .DS_Store

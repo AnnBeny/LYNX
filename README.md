@@ -38,6 +38,7 @@ spustí všechny skripty pro CLL/DLBCL najednou
   |---------|----------|
 - v terminálu zkontrolovat neviditelné znaky, které tam přidává excel **cat -A seznam_*.csv**
 - a vymazat je **sed -i '1s/^\xEF\xBB\xBF//' seznam_*.csv**
+- a vymazat mezery na konci řádků **sed -i 's/[[:space:]]*$//' seznam_*.csv**
 - stáhnout soubory z Lynx serveru skriptem **download_*.sh**
 - pokud něco spadne, opravit název v seznamu vzorků seznam_*.csv
 - zjistit názvy sloupců ve stažených souborech skriptem **column.sh**, přidat chybějící sloupce do skriptu **merge_*.py** nebo **separate_*.py**

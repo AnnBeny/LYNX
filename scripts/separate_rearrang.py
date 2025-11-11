@@ -4,19 +4,51 @@ from pathlib import Path
 from datetime import datetime
 import re
 
+root = Path(__file__).parents[1]
+
+# parameters for choosing of input data
+def choose(prompt, options, default=None):
+    print(prompt)
+    for i, opt in enumerate(options, start=1):
+        print(f"{i}. {opt}")
+    choice = input(f"Enter choice (1-{len(options)}): ").strip()
+    if not choice and default is not None:
+        return default
+    try:
+        index = int(choice)
+        # allow choice up to len(options)
+        if 1 <= index <= len(options):
+            return options[index-1]
+    except ValueError:
+        pass
+    print("Invalid choice. Please try again.")
+    return choose(prompt, options, default)
+
+DIAGNOSIS = choose("Select diagnosis:", ["ALL","DLBCL","CLL","MM"], default="ALL")
+
+# python separate_rearrang.py [ALL|DLBCL|CLL|MM]
+#diagnosis = sys.argv[1] if len(sys.argv) > 1 else "MM" # default MM if not provided
+DIAGNOSIS = DIAGNOSIS.upper()
+dx_upper = DIAGNOSIS.upper()
+dx_lower = DIAGNOSIS.lower()
+
 # --- Folder paths ---
-folder = Path(__file__).parent / 'TRANSLOKACE_PRESTAVBA_ALL'
-seznam = Path(__file__).parent / 'seznam_all.csv'
+#folder = root / f'TRANSLOKACE_PRESTAVBA_{dx_upper}'
+folder = root / f'{dx_upper}'
+seznam = root / f'seznam_{dx_lower}.csv'
 timestamp = datetime.now().strftime("%d%m%Y")
-output_file = Path(__file__).parent / f'merged_data_rearrangement_all_{timestamp}.xlsx'
+output_file = Path(__file__).parents[1] / 'output' / f'merged_data_rearrangement_{dx_lower}_{timestamp}.xlsx'
+
+print(f"Diagnosis: {dx_upper}, List: {seznam}, Input file: {folder}, Output file: {output_file}")
 
 # Read the input file
 sample_table = pd.read_csv(seznam, sep=',', encoding='utf-8', names=['Run', 'Sample'], header=None, dtype=str)
 files = list(folder.glob('*.xlsx'))
 
-print(f'Found files: {files}')
+print(f"Sample table shape: {sample_table.shape}")
+print(f"Found {len(files)} files in {folder}")
 
-# sort of columns
+# Sort of columns
 columns_sort = ['run', 'sample', 'diagnosis', 'comments', 'in FASTQs', 'duplicated', 'mapped', 'on target',
                 'usable', 'rearrangement class', 'locus', 'V gene', 'D gene', 'J gene',
                 '%locus', '%class', 'fragments', 'locus sum', 'segmentation', 'junction', 'junction nt seq',
@@ -40,7 +72,7 @@ for file in files:
         print(f'Run {run_name} not found in sample table. Skipping file {file.name}.')
         continue
 
-    # Získat sample pro tento run
+    # Get sample for this run
     sample_row = sample_table[sample_table['Run'] == run_name]
     if sample_row.empty:
         print(f'No sample found for run {run_name}. Skipping file {file.name}.')
@@ -50,11 +82,12 @@ for file in files:
     for sheet_name in xls.sheet_names:
         sheet_base = sheet_name
         if sheet_base.endswith('_R1'):
-            sheet_base = sheet_base[:-3]
+            #sheet_base = sheet_base[:-3]
+            sheet_base: str = sheet_base.removesuffix('_R1')
         if sheet_base in samples:
             sheet_df = pd.read_excel(xls, sheet_name=sheet_name)
             print(f'Processing sheet: {sheet_df.columns} from file: {file.name}')
-            # Odstranit HTML tagy ze všech buněk
+            # Remove HTML tags from all cells
             def strip_html(val):
                 if isinstance(val, str):
                     return re.sub(r'<[^>]*>', '', val)
@@ -62,9 +95,9 @@ for file in files:
             #sheet_df = sheet_df.applymap(strip_html)
             sheet_df = sheet_df.map(strip_html)
             print(f'Columns after HTML stripping: \n {sheet_df.columns}')
-            # Přidat sloupce sample, diagnosis a run
+            # Add columns sample, diagnosis and run
             sheet_df['sample'] = sheet_base
-            sheet_df['diagnosis'] = 'ALL'
+            sheet_df['diagnosis'] = 'MM'
             sheet_df['run'] = run_name
             sheet_df['V gene'] = ''
             sheet_df['D gene'] = ''
@@ -98,11 +131,6 @@ for file in files:
 
             # Process 'gene partner' column (column 13)
             if 'gene partner' in sheet_df.columns:
-                # Prefer 'gene partner' values for 'J gene'
-                #sheet_df['J gene'] = sheet_df['gene partner'].apply(lambda x: extract_gene_type(x, 'J'))
-                # Update 'V gene' and 'D gene' if 'gene partner' has relevant info
-                #sheet_df['V gene'] = sheet_df['V gene'].fillna(sheet_df['gene partner'].apply(lambda x: extract_gene_type(x, 'V')))
-                #sheet_df['D gene'] = sheet_df['D gene'].fillna(sheet_df['gene partner'].apply(lambda x: extract_gene_type(x, 'D')))
                 partner_V = sheet_df['gene partner'].map(lambda x: extract_gene_type(x, 'V'))
                 partner_D = sheet_df['gene partner'].map(lambda x: extract_gene_type(x, 'D'))
                 partner_J = sheet_df['gene partner'].map(lambda x: extract_gene_type(x, 'J'))
@@ -114,16 +142,13 @@ for file in files:
 
             #print(f'filter columns: \n {sheet_df.columns}')
 
-            # Filtrovat na R ve sloupci 11 (index 10)
-            #if sheet_df.shape[1] > 10:
-            #    sheet_df = sheet_df[sheet_df.iloc[:, 10] == 'R']
+            # Filter R in column 11 (index 10) = class1
             if 'class1' in sheet_df.columns:
                 sheet_df = sheet_df[sheet_df['class1'] == 'R']
             merged_df = pd.concat([merged_df, sheet_df], ignore_index=True)
             print(f'Merged dataframe shape: {merged_df.columns}')
             print(f'Added sheet: {sheet_name} (base: {sheet_base}) from file: {file.name}')
 
-# Do something with the merged DataFrame
 print(merged_df.head())
 print(f'Columns before merge and rename: \n {merged_df.columns}')
 
@@ -136,7 +161,7 @@ merged_df = merged_df.rename(columns={
 
 print(f'Columns after merge and rename: \n {merged_df.columns}')
 
-# Přeskládat sloupce: run, sample, diagnosis, ostatní
+# Rearrange columns: run, sample, diagnosis, others
 exclude_cols = ['gene', 'gene partner', 'report','QC','clonal','class1','coord','coord partner', 'depth(s)','event2','event3','event comments','generic BAM','special BAM',]
 #cols = ['run', 'sample', 'diagnosis'] + [col for col in merged_df.columns if col not in ['run', 'sample', 'diagnosis'] + exclude_cols]
 cols = [col for col in merged_df.columns if col not in exclude_cols]

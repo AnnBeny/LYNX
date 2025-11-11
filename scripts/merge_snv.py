@@ -1,13 +1,46 @@
+from html.entities import html5
+from io import StringIO
+from bs4 import BeautifulSoup
+import re, html
+import sys
 import pandas as pd
 import numpy as np
 from pathlib import Path
 from datetime import datetime
 
+root = Path(__file__).parents[1]
+
+# parameters for choosing of input data
+def choose(prompt, options, default=None):
+    print(prompt)
+    for i, opt in enumerate(options, start=1):
+        print(f"{i}. {opt}")
+    choice = input(f"Enter choice (1-{len(options)}): ").strip()
+    if not choice and default is not None:
+        return default
+    try:
+        index = int(choice)
+        # allow choice up to len(options)
+        if 1 <= index <= len(options):
+            return options[index-1]
+    except ValueError:
+        pass
+    print("Invalid choice. Please try again.")
+    return choose(prompt, options, default)
+
+DIAGNOSIS = choose("Select diagnosis:", ["ALL","DLBCL","CLL","MM"], default="ALL")
+
+# python merge_cna.py [ALL|DLBCL|CMM]
+#diagnosis = sys.argv[1] if len(sys.argv) > 1 else "MM" # default MM if not provided
+DIAGNOSIS = DIAGNOSIS.upper()
+dx_upper = DIAGNOSIS.upper()
+dx_lower = DIAGNOSIS.lower()
+
 # ---- Folder with files ----
-folder = Path(__file__).parent / 'ALL'
-csv_file = Path(__file__).parent / 'seznam_all.csv'
+folder = root / dx_upper
+csv_file = root / f'seznam_{dx_lower}.csv'
 timestamp = datetime.now().strftime("%d%m%Y")
-output_file = Path(__file__).parent / f'merged_data_snv_all_{timestamp}.xlsx'
+output_file = root / 'output' / f'merged_data_snv_{dx_lower}_{timestamp}.xlsx'
 
 # Read the samples and run from seznam.csv
 sample_table = pd.read_csv(csv_file, sep=',', header=None, names=['Run', 'Sample'])
@@ -20,6 +53,8 @@ print(f"sample_table shape: {sample_table}")
 
 # Get all files
 files = list(folder.glob('*.mutect2.cons.filt.norm.vep.csv'))
+cyto_file = root / "cytoBand_hg38.txt"
+cyto = pd.read_csv(cyto_file, sep="\t")
 print(f"Found {len(files)} files in {folder}")
 
 # sort of columns
@@ -40,7 +75,7 @@ def normalize_af_cols(df, cols, dec_places=4):
 
         # simple values → to float → back to text with dot
         single = pd.to_numeric(s[~multi_mask].str.replace(',', '.', regex=False),
-                               errors='coerce')
+                                errors='coerce')
         single = single.map(
             lambda x: f"{x:.{dec_places}f}" if not np.isnan(x) else ''
         )
@@ -74,18 +109,46 @@ for file in files:
     #match = sample_table[sample_table['Sample'] == sample_name]
     #print(f"Matching sample: {match}")
 
-    if match.empty:
-        print(f"No matching sample found for {file.name}, skipping.")
-        continue
+    with open(file, 'r', encoding='utf-8') as f:
+        raw_text = f.read()
+
+    # Remove HTML tags from the entire text
+    soup = BeautifulSoup(raw_text, "lxml")
+    cleaned_text = soup.get_text(separator="\n")
+    cleaned_text = html.unescape(cleaned_text)
+    cleaned_text = re.sub(r'[ \t\u00A0]+', ' ', cleaned_text).strip()
+    # cleaned_text = re.sub(r'<div><div[^>]*>([^<]+)</div></div>', r'\1', raw_text)
+    
+    '''
+    def strip_html_text(val):
+        if pd.isna(val):
+            return val
+        val = re.sub(r'<[^>]*>', '', str(val))
+        val = html5().unescape(val)
+        #val = html.unescape(val) 
+        val = re.sub(r'\s+', ' ', val).strip() 
+        return val
+    '''
 
     run = match.iloc[0]['Run']
 
-    #df = pd.read_csv(file, sep='\t')
-    df = pd.read_csv(file, sep=',')
-    df['Chromosome'] = df['Chromosome'].astype(str).str.strip()
+    df = pd.read_csv(file, sep='\t')
+    print(f"\nDataFrame shape after reading {file.name}: {df.shape}")
+    print(f"DataFrame columns after reading {file.name}: {df.columns.tolist()}")
+    #df = pd.read_csv(file, sep=',', encoding='utf-8')
+    #df = pd.read_csv(StringIO(cleaned_text), sep=',', dtype=str, low_memory=False)
+
+    #df['Chromosome'] = df['Chromosome'].astype(str).str.strip()
+
     #df = pd.read_csv(file, sep=',', dtype={'Chromosome': str}, low_memory=False)
-    print(df['Chromosome'].dtype)
-    #print(f"DataFrame shape after reading {file.name}: {df.shape}")
+    #print(df['Chromosome'].dtype)
+
+    print(f"\nDataFrame shape after reading {file.name}: {df.shape}")
+    
+    df = pd.read_csv(StringIO(cleaned_text), sep=',', dtype=str, low_memory=False)
+    
+    print(f"\nDataFrame head after cleaning HTML from {file.name}:")
+    print(df.head(0)) 
     
     for col in columns_sort:
         if col not in df.columns:
@@ -95,11 +158,16 @@ for file in files:
     df.insert(loc=0, column='run', value=run)
     #df.insert(loc=1, column='sample', value=sample_name)
     df.insert(loc=1, column='sample', value=match.iloc[0]['Sample'])
-    df.insert(loc=2, column='diagnosis', value='ALL')
+    df.insert(loc=2, column='diagnosis', value='MM')
+
+    print(f"\nDataFrame head after processing {file.name}:")
+    print(df.head(0))
 
     merged_dataframes.append(df)
 
 final_df = pd.concat(merged_dataframes, ignore_index=True)
+print("\nFinal merged DataFrame head:")
+print(final_df.head(0))
 
 # connect two columns, version with ends 'g' is the newer
 #final_df['gnomadg_af'].replace('', np.nan, inplace=True)
@@ -118,7 +186,6 @@ final_df = normalize_af_cols(final_df, cols_to_fix)
 # ---- Save merged data ----
 final_df.to_excel(output_file, index=False)
 print(f"Merged {final_df.shape[0]} files into {output_file.name}")
-
 
 # control number of rows 
 # wc -l *.mutect2.cons.filt.norm.vep.csv

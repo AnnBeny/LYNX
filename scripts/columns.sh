@@ -1,4 +1,12 @@
 #!/bin/bash
+set -euo pipefail
+
+# source /home/anna/miniconda3/bin/activate csvkit && bash columns.sh
+# ./columns.sh [ALL|DLBCL|CMM] -> without choice menu
+
+# conda activate csvkit
+source /home/anna/miniconda3/etc/profile.d/conda.sh
+conda activate csvkit
 
 DX="${1:-}"
 

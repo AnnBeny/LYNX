@@ -1,6 +1,6 @@
 ## Seznam skriptů
 
-### columns.py
+### columns.sh
 vypíše názvy sloupečků - unikátní i u jednotlivých souborů
 
 ### control_row_counts.py

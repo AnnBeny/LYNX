@@ -24,7 +24,7 @@ pozor na desetinné čárky a tečky - někde je potřeba zachovat tečky, jinde
 
 <li>
 někdy se objeví html značka v souboru z keeperu (řešeno ve skriptu, ale někdy to nefunguje a musí se to opravit ručně!)
-html < br > a < div > se objevuje i v komentářích, ale nevadí při merge, stačí smazat až ve výsledných souborech+
+html < br > a < div > se objevuje i v komentářích, ale nevadí při merge, stačí smazat až ve výsledných souborech
 v některych souborech celý řádek  jen html kod (i na LYNX)
 </li>
 

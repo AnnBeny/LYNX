@@ -112,11 +112,14 @@ elif [[ "$DATA_KIND" == "snv" ]]; then
     done < "$LIST"
 # --- TRANSLOCATIONS REARRANGEMENT ----
 elif [[ "$DATA_KIND" == "translocations_rearrangement" ]]; then
-    awk -F',' 'NR>1{print $1}' "$LIST" | sort -u | while read -r run; do
-        if [[ -z "$run" ]]; then
-            echo "Chyba u : $run" >&2
-            continue
-        fi
+    # awk -F',' 'NR>1{print $1}' "$LIST" | sort -u | while read -r run; do
+    #     if [[ -z "$run" ]]; then
+    #         echo "Chyba u : $run" >&2
+    #         continue
+    #     fi
+    
+    while read -r run; do
+        [[ -z "$run" ]] && { echo "Chyba u : $run" >&2; continue; }
 
         outfile="$DEST/${run}.gathered.xlsx"
         if [ -f "$outfile" ]; then
@@ -135,7 +138,7 @@ elif [[ "$DATA_KIND" == "translocations_rearrangement" ]]; then
             failures+=("$run ($remote_path)")
             ((err++))
         fi
-    done
+    done < <(awk -F',' 'NR>1{print $1}' "$LIST" | sort -u)
 else
     echo "Neznámý TYPE: $DATA_KIND (použij cns|snv|trans)" >&2; exit 2
 fi

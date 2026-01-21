@@ -158,7 +158,7 @@ for file in files:
     df.insert(loc=0, column='run', value=run)
     #df.insert(loc=1, column='sample', value=sample_name)
     df.insert(loc=1, column='sample', value=match.iloc[0]['Sample'])
-    df.insert(loc=2, column='diagnosis', value='MM')
+    df.insert(loc=2, column='diagnosis', value=DIAGNOSIS)
 
     print(f"\nDataFrame head after processing {file.name}:")
     print(df.head(0))

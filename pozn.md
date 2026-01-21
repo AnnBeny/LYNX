@@ -23,12 +23,20 @@ pozor na desetinné čárky a tečky - někde je potřeba zachovat čárky, jind
 </li>
 
 <li>
-někdy se objeví html značka v souboru ze keeperu (vyřešeno ve skriptu)
+někdy se objeví html značka v souboru z keeperu (řešeno ve skriptu, ale někdy to nefunguje a musí se to opravit ručně!)
+html < br > a < div > se objevuje i v komentářích, ale nevadí při merge, stačí smazat až ve výsledných souborech+
+v některych souborech celý řádek  jen html kod (i na LYNX)
 </li>
 
+<h5>SNV</h5>
 <li>
 sloupce af, eur_af, gnomad_af, gnomad_nfe_af, max_af
 <ul><li>místo prázdných hodnot doplnit 0,000 kvůli filtrování</li></ul>
+<ul><li>místo teček čárky</li></ul>
+ve sloupci tumor_AF, strand_bias, MANE_SELECT nechat tečky
+sloupce duplicated, mapped, on_target 
+    <ul><li>tečky na čárky</ul></li>
+    <ul><li>nastavit buňky na procenta</ul></li>
 </li>
 
 <li>
@@ -51,7 +59,8 @@ Ve sloupci class2 jsou upřesňující hodnoty pro class1:
 Přejmenování sloupců:
 <ul><li>probes -> bins</li></ul>
 <ul><li>gene -> LPD genes</li></ul>
-<ul><li>více viz soubor LYNX sloupecky.xlsx</li></ul>
+<ul><li>více viz soubor LYNX sloupecky.xlsx (nasdílená tab od Toma)</li></ul>
+<ul><li>%locus v tab s přejmenováním jako %, ale na LYNX UI odpovídá sloupci 'frequency'
 </li>
 
 <li>

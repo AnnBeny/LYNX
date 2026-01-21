@@ -14,6 +14,7 @@ echo "CHOICES: DX=$DX"
 ROOT="/mnt/hdd2/anna/LYNX"
 DEST="$ROOT/$DX"
 echo "DEST=$DEST"
+SEZNAM="$ROOT/seznam_dlbcl.csv"
 OUTFILE_cns="$ROOT/heads_cns_$DX.txt"
 OUTFILE_snv="$ROOT/heads_snv_$DX.txt"
 OUTFILE_tr_re="$ROOT/heads_trans_rear_$DX.txt"
@@ -47,12 +48,18 @@ done | sort | uniq -c > "$ROOT/unique_heads_snv_$DX.txt"
 # --- translocations, rearrangements ---
 > "$OUTFILE_tr_re"
 
-for file in "$DEST"/*.xlsx; do
-    echo "Soubor $file" >> "$OUTFILE_tr_re"
-    head -n 1 "$file" >> "$OUTFILE_tr_re"
-    echo >> "$OUTFILE_tr_re"
-done
+while IFS=, read -r run sample _rest; do 
+  echo "Zpracovávám běh $run, vzorek $sample"
+  xlsx="${DEST}/${run}.gathered.xlsx"
 
-for file in "$DEST"/*.xlsx; do
-    head -n 1 "$file"
-done | sort | uniq -c > "$ROOT/unique_heads_trans_rear_$DX.txt"
+  sample_sheet="${sample}_R1"
+  echo "Hledám list: $sample_sheet v souboru $xlsx"
+
+  header_line="$(in2csv --sheet "$sample_sheet" "$xlsx" | head -n 1 || true)" 
+
+  echo "Soubor $xlsx, list $sample_sheet" >> "$OUTFILE_tr_re"
+  printf '%s\n' "$header_line" >> "$OUTFILE_tr_re"
+  echo >> "$OUTFILE_tr_re"
+done <"$SEZNAM"
+
+sort "$OUTFILE_tr_re" | uniq -c > "$ROOT/unique_heads_trans_rear_$DX.txt"

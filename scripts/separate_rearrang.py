@@ -32,6 +32,8 @@ DIAGNOSIS = DIAGNOSIS.upper()
 dx_upper = DIAGNOSIS.upper()
 dx_lower = DIAGNOSIS.lower()
 
+print(f"Diagnosis: {dx_upper}, List: seznam_{dx_lower}.csv, Input file: {dx_upper}")
+
 # --- Folder paths ---
 #folder = root / f'TRANSLOKACE_PRESTAVBA_{dx_upper}'
 folder = root / f'{dx_upper}'
@@ -54,103 +56,135 @@ columns_sort = ['run', 'sample', 'diagnosis', 'comments', 'in FASTQs', 'duplicat
                 '%locus', '%class', 'fragments', 'locus sum', 'segmentation', 'junction', 'junction nt seq',
                 'sequence context']
 
+# define empty values
+def has_value(s: pd.Series) -> pd.Series:
+    return s.notna() & (s.astype(str).str.strip() != "")
+
 # --- Merge all sheets from the first file ---
 merged_df = pd.DataFrame()
 
 for file in files:
-    print(f'\n{"-"*40}\n')
+    try:
+        print(f'{"-"*150}')
 
-    print(f'Processing file: \n {file.name}')
+        print(f'Processing file: \n {file.name}')
 
-    xls = pd.ExcelFile(file)
-    print(f'Found sheets: \n {xls.sheet_names}')
+        xls = pd.ExcelFile(file)
+        #print(f'Found sheets: \n {xls.sheet_names}')
 
-    # Extract run name from the file name
-    run_name = file.stem.replace('.gathered.xlsx', '')
-    run_name = run_name.replace('.gathered', '')
-    if run_name not in sample_table['Run'].values:
-        print(f'Run {run_name} not found in sample table. Skipping file {file.name}.')
+        # Extract run name from the file name
+        run_name = file.stem.replace('.gathered.xlsx', '')
+        run_name = run_name.replace('.gathered', '')
+        if run_name not in sample_table['Run'].values:
+            print(f'Run {run_name} not found in sample table. Skipping file {file.name}.')
+            continue
+
+        # Get sample for this run
+        sample_row = sample_table[sample_table['Run'] == run_name]
+        if sample_row.empty:
+            print(f'No sample found for run {run_name}. Skipping file {file.name}.')
+            continue
+        samples = sample_row['Sample'].values
+
+        for sheet_name in xls.sheet_names:
+            sheet_base = sheet_name
+            if sheet_base.endswith('_R1'):
+                #sheet_base = sheet_base[:-3]
+                sheet_base: str = sheet_base.removesuffix('_R1')
+            if sheet_base in samples:
+                sheet_df = pd.read_excel(xls, sheet_name=sheet_name)
+                #print(f'Processing sheet: {sheet_df.columns} from file: {file.name}')
+                # Remove HTML tags from all cells
+                def strip_html(val):
+                    if isinstance(val, str):
+                        return re.sub(r'<[^>]*>', '', val)
+                    return val
+                #sheet_df = sheet_df.applymap(strip_html)
+                sheet_df = sheet_df.map(strip_html)
+                #print(f'Columns after HTML stripping: \n {sheet_df.columns}')
+                # Add columns sample, diagnosis and run
+                sheet_df['sample'] = sheet_base
+                sheet_df['diagnosis'] = DIAGNOSIS
+                sheet_df['run'] = run_name
+                sheet_df['V gene'] = ''
+                sheet_df['D gene'] = ''
+                sheet_df['J gene'] = ''
+                #print(f'Columns after adding sample, diagnosis, run: \n {sheet_df.columns}')
+
+                # Rename columns to match the desired output and check fullness of % and %locus
+                if '%' not in sheet_df.columns and '%locus' in sheet_df.columns:
+                    sheet_df = sheet_df.rename(columns={'%locus': '%'})
+                elif '%' in sheet_df.columns and '%locus' in sheet_df.columns:
+                    m_pct      = has_value(sheet_df["%"])
+                    m_pctlocus = has_value(sheet_df["%locus"])
+                    print(f'Checking fullness of % and %locus in sheet: {sheet_name}')
+                    print("number of non-empty entries in %:", m_pct.sum())
+                    print("number of non-empty entries in %locus:", m_pctlocus.sum())
+
+                    # lines where only one of the two columns is filled
+                    only_pct      = m_pct & ~m_pctlocus
+                    only_pctlocus = ~m_pct & m_pctlocus
+
+                    print("lines where only % is filled:", only_pct.sum())
+                    print("lines where only %locus is filled:", only_pctlocus.sum())
+
+                    # lines where both columns are filled
+                    both = m_pct & m_pctlocus
+                    print("both filled:", both.sum()) # should be 0 if data is consistent
+
+                    diff = both & (sheet_df["%"].astype(str).str.strip() != sheet_df["%locus"].astype(str).str.strip()) # check for differences
+                    print("both filled and differ:", diff.sum())
+
+                    sheet_df["%_merged"] = sheet_df["%"].where(m_pct, sheet_df["%locus"]) # prefer % over %locus
+                    sheet_df = sheet_df.drop(columns=["%", "%locus"]) # drop old columns
+                    sheet_df = sheet_df.rename(columns={"%_merged": "%"}) # rename merged column to %locus
+
+                #sheet_df = sheet_df.rename(columns={'%locus': '%'})
+                #print(f'Columns after renaming: \n {sheet_df.columns}')
+
+                # Change column types to string to avoid issues with NaN
+                #sheet_df['comments'] = sheet_df['comments'].astype(str)
+                sheet_df['comments'] = sheet_df['comments'].apply(lambda x: str(x) if pd.notnull(x) else '')
+                #print(f'Comments column types after conversion: {sheet_df["comments"].dtype}')
+
+                # Function to extract gene type based on position 4
+                def extract_gene_type(gene, gene_type):
+                    if isinstance(gene, str) and len(gene) >= 4:
+                        if gene[3] == gene_type:
+                            return gene
+                    return None
+
+                # Process 'gene' column (column 12)
+                #if 'gene' in sheet_df.columns:
+                #    sheet_df['V gene'] = sheet_df['gene'].apply(lambda x: extract_gene_type(x, 'V'))
+                #    sheet_df['D gene'] = sheet_df['gene'].apply(lambda x: extract_gene_type(x, 'D'))
+                #    sheet_df['J gene'] = sheet_df['gene'].apply(lambda x: extract_gene_type(x, 'J'))
+                sheet_df['V gene'] = sheet_df['gene'].map(lambda x: extract_gene_type(x, 'V'))
+                sheet_df['D gene'] = sheet_df['gene'].map(lambda x: extract_gene_type(x, 'D'))
+                sheet_df['J gene'] = sheet_df['gene'].map(lambda x: extract_gene_type(x, 'J'))
+
+                # Process 'gene partner' column (column 13)
+                if 'gene partner' in sheet_df.columns:
+                    partner_V = sheet_df['gene partner'].map(lambda x: extract_gene_type(x, 'V'))
+                    partner_D = sheet_df['gene partner'].map(lambda x: extract_gene_type(x, 'D'))
+                    partner_J = sheet_df['gene partner'].map(lambda x: extract_gene_type(x, 'J'))
+
+                    sheet_df['V gene'] = sheet_df['V gene'].fillna(partner_V)
+                    sheet_df['D gene'] = sheet_df['D gene'].fillna(partner_D)
+                    sheet_df['J gene'] = sheet_df['J gene'].fillna(partner_J)
+                #print(f'Columns after processing gene and gene partner: \n {sheet_df.columns}')
+
+                #print(f'filter columns: \n {sheet_df.columns}')
+
+                # Filter R in column 11 (index 10) = class1
+                if 'class1' in sheet_df.columns:
+                    sheet_df = sheet_df[sheet_df['class1'] == 'R']
+                merged_df = pd.concat([merged_df, sheet_df], ignore_index=True)
+                #print(f'Merged dataframe shape: {merged_df.columns}')
+                #print(f'Added sheet: {sheet_name} (base: {sheet_base}) from file: {file.name}')
+    except Exception as e:
+        print(f'Error processing file {file.name}: {e}')
         continue
-
-    # Get sample for this run
-    sample_row = sample_table[sample_table['Run'] == run_name]
-    if sample_row.empty:
-        print(f'No sample found for run {run_name}. Skipping file {file.name}.')
-        continue
-    samples = sample_row['Sample'].values
-
-    for sheet_name in xls.sheet_names:
-        sheet_base = sheet_name
-        if sheet_base.endswith('_R1'):
-            #sheet_base = sheet_base[:-3]
-            sheet_base: str = sheet_base.removesuffix('_R1')
-        if sheet_base in samples:
-            sheet_df = pd.read_excel(xls, sheet_name=sheet_name)
-            print(f'Processing sheet: {sheet_df.columns} from file: {file.name}')
-            # Remove HTML tags from all cells
-            def strip_html(val):
-                if isinstance(val, str):
-                    return re.sub(r'<[^>]*>', '', val)
-                return val
-            #sheet_df = sheet_df.applymap(strip_html)
-            sheet_df = sheet_df.map(strip_html)
-            print(f'Columns after HTML stripping: \n {sheet_df.columns}')
-            # Add columns sample, diagnosis and run
-            sheet_df['sample'] = sheet_base
-            sheet_df['diagnosis'] = 'MM'
-            sheet_df['run'] = run_name
-            sheet_df['V gene'] = ''
-            sheet_df['D gene'] = ''
-            sheet_df['J gene'] = ''
-            print(f'Columns after adding sample, diagnosis, run: \n {sheet_df.columns}')
-
-            # Rename columns to match the desired output
-            sheet_df = sheet_df.rename(columns={'%locus': '%'})
-            print(f'Columns after renaming: \n {sheet_df.columns}')
-
-            # Change column types to string to avoid issues with NaN
-            #sheet_df['comments'] = sheet_df['comments'].astype(str)
-            sheet_df['comments'] = sheet_df['comments'].apply(lambda x: str(x) if pd.notnull(x) else '')
-            print(f'Comments column types after conversion: {sheet_df["comments"].dtype}')
-
-            # Function to extract gene type based on position 4
-            def extract_gene_type(gene, gene_type):
-                if isinstance(gene, str) and len(gene) >= 4:
-                    if gene[3] == gene_type:
-                        return gene
-                return None
-
-            # Process 'gene' column (column 12)
-            #if 'gene' in sheet_df.columns:
-            #    sheet_df['V gene'] = sheet_df['gene'].apply(lambda x: extract_gene_type(x, 'V'))
-            #    sheet_df['D gene'] = sheet_df['gene'].apply(lambda x: extract_gene_type(x, 'D'))
-            #    sheet_df['J gene'] = sheet_df['gene'].apply(lambda x: extract_gene_type(x, 'J'))
-            sheet_df['V gene'] = sheet_df['gene'].map(lambda x: extract_gene_type(x, 'V'))
-            sheet_df['D gene'] = sheet_df['gene'].map(lambda x: extract_gene_type(x, 'D'))
-            sheet_df['J gene'] = sheet_df['gene'].map(lambda x: extract_gene_type(x, 'J'))
-
-            # Process 'gene partner' column (column 13)
-            if 'gene partner' in sheet_df.columns:
-                partner_V = sheet_df['gene partner'].map(lambda x: extract_gene_type(x, 'V'))
-                partner_D = sheet_df['gene partner'].map(lambda x: extract_gene_type(x, 'D'))
-                partner_J = sheet_df['gene partner'].map(lambda x: extract_gene_type(x, 'J'))
-
-                sheet_df['V gene'] = sheet_df['V gene'].fillna(partner_V)
-                sheet_df['D gene'] = sheet_df['D gene'].fillna(partner_D)
-                sheet_df['J gene'] = sheet_df['J gene'].fillna(partner_J)
-            print(f'Columns after processing gene and gene partner: \n {sheet_df.columns}')
-
-            #print(f'filter columns: \n {sheet_df.columns}')
-
-            # Filter R in column 11 (index 10) = class1
-            if 'class1' in sheet_df.columns:
-                sheet_df = sheet_df[sheet_df['class1'] == 'R']
-            merged_df = pd.concat([merged_df, sheet_df], ignore_index=True)
-            print(f'Merged dataframe shape: {merged_df.columns}')
-            print(f'Added sheet: {sheet_name} (base: {sheet_base}) from file: {file.name}')
-
-print(merged_df.head())
-print(f'Columns before merge and rename: \n {merged_df.columns}')
 
 # Rename columns
 merged_df = merged_df.rename(columns={
@@ -159,7 +193,7 @@ merged_df = merged_df.rename(columns={
     'event1': 'segmentation'
 })
 
-print(f'Columns after merge and rename: \n {merged_df.columns}')
+#print(f'Columns after merge and rename: \n {merged_df.columns}')
 
 # Rearrange columns: run, sample, diagnosis, others
 exclude_cols = ['gene', 'gene partner', 'report','QC','clonal','class1','coord','coord partner', 'depth(s)','event2','event3','event comments','generic BAM','special BAM',]

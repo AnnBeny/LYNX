@@ -1,5 +1,6 @@
 import pandas as pd
 import sys
+import logging
 from pathlib import Path
 from datetime import datetime
 
@@ -30,6 +31,20 @@ DIAGNOSIS = DIAGNOSIS.upper()
 dx_upper = DIAGNOSIS.upper()
 dx_lower = DIAGNOSIS.lower()
 
+# logging configuration
+parent_dir = Path(__file__).resolve().parent.parent
+log_dir = parent_dir / "logs"
+log_dir.mkdir(parents=True, exist_ok=True)
+log_path = parent_dir / f"cnv_{dx_lower}.log"
+
+logging.basicConfig(
+    filename=log_path,
+    level=logging.INFO,
+    format="%(asctime)s %(levelname)s %(message)s",
+)
+
+logging.info("Spuštění skriptu")
+
 # ---- Folder with files ----
 folder = root / dx_upper
 csv_file = root / f'seznam_{dx_lower}.csv'
@@ -41,7 +56,9 @@ sample_table = pd.read_csv(csv_file, sep=',', header=None, names=['Run', 'Sample
 sample_table['Run'] = sample_table['Run'].astype(str).str.strip()
 sample_table['Sample'] = sample_table['Sample'].astype(str).str.strip()
 
-sample_table['Filename'] = sample_table['Run'] + "_" + sample_table['Sample']
+#sample_table['Filename'] = sample_table['Run'] + "_" + sample_table['Sample']
+sample_table['Filename'] = sample_table['Run'].astype(str) + "_" + sample_table['Sample'].astype(str)
+
 
 print(f"sample_table shape: {sample_table}")
 
@@ -100,7 +117,7 @@ for file in files:
 
     df['run'] = run
     df['sample'] = sample_name
-    df['diagnosis'] = 'MM'
+    df['diagnosis'] = dx_upper
 
     df = df[[col for col in columns_sort if col in df.columns]]
 
@@ -132,9 +149,10 @@ final_df = pd.concat(merged_dataframes, ignore_index=True)
 # ---- Save merged data ----
 final_df.to_excel(output_file, index=False)
 print(f"Merged {final_df.shape[0]} files into {output_file.name}")
-
+print("Log vytvořen:", log_path.name)
 
 # control number of rows 
-# wc -l *.call.cns
+# awk 'tolower($1) ~ /^(comments|chromosome)$/ { next }  NF { count[FILENAME]++ }  END {for (f in count) {printf "%s\t%d\n", f, count[f]}  }' *.call.cns | sort - pro jednotlive soubory
+# wc -l *.call.cns - pro všechny dohromady
 # soubory majici hlavicku zacinajici chromosome nepocita prvni radek - potreba pricist +1
 # porovnat s unique_heads.txt ze skriptu columns.sh

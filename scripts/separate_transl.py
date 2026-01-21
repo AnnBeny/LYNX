@@ -64,6 +64,8 @@ columns_sort = ['run', 'sample', 'diagnosis', 'comments', 'in FASTQs', 'duplicat
 merged_df = pd.DataFrame()
 
 for file in files:
+    print(f'{"-"*150}')
+    
     print(f'Processing file: \n {file.name}')
 
     xls = pd.ExcelFile(file)
@@ -96,7 +98,7 @@ for file in files:
             sheet_df = sheet_df.map(strip_html)
             # Add columns sample, diagnosis and run
             sheet_df['sample'] = sheet_base
-            sheet_df['diagnosis'] = 'MM'
+            sheet_df['diagnosis'] = DIAGNOSIS
             sheet_df['run'] = run_name
 
             # Filterovat SV (SV-R) in column 11 (index 10)

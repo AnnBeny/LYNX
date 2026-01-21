@@ -38,7 +38,8 @@ sloupce duplicated, mapped, on_target
     <ul><li>tečky na čárky</ul></li>
     <ul><li>nastavit buňky na procenta</ul></li>
 </li>
-
+<br>
+<br>
 <li>
 v class:
 <ul><li>R - přestavba</li></ul>

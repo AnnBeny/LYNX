@@ -19,7 +19,7 @@ ID vzorků
 </li>
 
 <li>
-pozor na desetinné čárky a tečky - někde je potřeba zachovat čárky, jinde lepší změny na čárky
+pozor na desetinné čárky a tečky - někde je potřeba zachovat tečky, jinde lepší změny na čárky
 </li>
 
 <li>

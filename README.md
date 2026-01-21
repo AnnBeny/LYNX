@@ -34,3 +34,4 @@ vezme všechny stažené soubory pro přestavby/translokace, vybere listy s vybr
 - pokud něco spadne, opravit název v seznamu vzorků seznam_*.csv
 - zjistit názvy sloupců ve stažených souborech skriptem **column.sh**, přidat chybějící sloupce do skriptu **merge_*.py** nebo **separate_*.py**
 - pomocí **control_*.py** skriptů zkontrolovat, jestli jsou tam všechny vzorky a sedí počet řádků (ne u translokací a přestaveb)
+- upravit excely (změnit tečky na čárky, ...) podle poznámek **pozn.md**

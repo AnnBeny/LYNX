@@ -29,7 +29,7 @@ vezme všechny stažené soubory pro přestavby/translokace, vybere listy s vybr
   |---------|----------|
 - v terminálu zkontrolovat neviditelné znaky, které tam přidává excel **cat -A seznam_*.csv**
 - a vymazat je **sed -i '1s/^\xEF\xBB\xBF//' seznam_*.csv**
-- a vymazat na konci řádků mezery **sed -i 's/[[:space:]]***$//' seznam_*.csv** nebo ^M **sed -e "s/\r//g" seznam_*.csv**
+- a vymazat na konci řádků mezery **sed -i 's/[[:space:]]$//' seznam_*.csv** nebo ^M **sed -e "s/\r//g" seznam_*.csv**
 - stáhnout soubory z Lynx serveru skriptem **download.sh**
 - pokud něco spadne, opravit název v seznamu vzorků seznam_*.csv
 - zjistit názvy sloupců ve stažených souborech skriptem **column.sh**, přidat chybějící sloupce do skriptu **merge_*.py** nebo **separate_*.py**

@@ -31,6 +31,7 @@ aktivuje venv a spustí merge a separate scripty
   | Run     | Sample   |
   |---------|----------|
   |Run1     |Sample1   |
+  |Run2     |Sample2   |
   ...
 - v terminálu zkontrolovat neviditelné znaky, které tam přidává excel **cat -A seznam_*.csv**
 - a vymazat je **sed -i '1s/^\xEF\xBB\xBF//' seznam_*.csv**

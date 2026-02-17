@@ -21,17 +21,22 @@ spojí všechny soubory CNA/SNV jednotlivých vzorků do jednoho souboru
 ### separate_rearrang.py a separate_transl.py
 vezme všechny stažené soubory pro přestavby/translokace, vybere listy s vybranýma vzorkama a spojí do jednoho excel souboru
 
+### run.sh
+aktivuje venv a spustí merge a separate scripty
+
 ---
 
 ## Postup
 - vytvořit seznam vzorků dané diagnózy **seznam_*.csv** (např. seznam_dlbcl.csv), jeden sloupecek název runu, druhý název samplu, oddělený čárkou
   | Run     | Sample   |
   |---------|----------|
+  |Run1     |Sample1   |
 - v terminálu zkontrolovat neviditelné znaky, které tam přidává excel **cat -A seznam_*.csv**
 - a vymazat je **sed -i '1s/^\xEF\xBB\xBF//' seznam_*.csv**
 - a vymazat na konci řádků mezery **sed -i 's/[[:space:]]$//' seznam_*.csv** nebo ^M **sed -e "s/\r//g" seznam_*.csv**
 - stáhnout soubory z Lynx serveru skriptem **download.sh**
-- pokud něco spadne, opravit název v seznamu vzorků seznam_*.csv
+- pokud něco spadne, opravit název v seznamu vzorků v **seznam_*.csv**
 - zjistit názvy sloupců ve stažených souborech skriptem **column.sh**, přidat chybějící sloupce do skriptu **merge_*.py** nebo **separate_*.py**
+- spustit **run.sh** a vybrat diagnózu
 - pomocí **control_*.py** skriptů zkontrolovat, jestli jsou tam všechny vzorky a sedí počet řádků (ne u translokací a přestaveb)
 - upravit excely (změnit tečky na čárky, ...) podle poznámek **pozn.md**

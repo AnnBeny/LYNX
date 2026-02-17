@@ -40,7 +40,7 @@ rear_trans_files = glob.glob(str(DIR_ALL / "*.gathered.xlsx"))
 # 10 latest files
 files = glob.glob(str(DIR_OUTPUT / f"merged_data_*_{dg_lower}_*.xlsx"))
 files.sort(key=lambda p: Path(p).stat().st_mtime, reverse=False)
-choose_files = files[9:]
+choose_files = files[-9:]
 
 # seznam
 seznam = pd.read_csv(SAMPLE_LIST, header=None, names=["run","sample"], dtype=str)

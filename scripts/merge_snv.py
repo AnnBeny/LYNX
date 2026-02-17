@@ -126,7 +126,7 @@ for file in files:
         val = re.sub(r'<[^>]*>', '', str(val))
         val = html5().unescape(val)
         #val = html.unescape(val) 
-        val = re.sub(r'\s+', ' ', val).strip() 
+        val = re.sub(r'\\s+', ' ', val).strip() 
         return val
     '''
 

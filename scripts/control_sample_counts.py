@@ -30,7 +30,7 @@ folder = root / 'output'
 # 10 latest files
 files = glob.glob(str(folder / f"merged_data_*_{DIAGNOSIS}_*.xlsx"))
 files.sort(key=lambda p: Path(p).stat().st_mtime, reverse=False)
-choose_files = files[9:]
+choose_files = files[-10:]
 
 # main loop
 while True:

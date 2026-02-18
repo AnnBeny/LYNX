@@ -33,17 +33,11 @@ sloupce af, eur_af, gnomad_af, gnomad_nfe_af, max_af
 <ul><li>místo prázdných hodnot doplnit 0,000 kvůli filtrování</li></ul>
 <ul><li>místo teček čárky</li></ul>
 ve sloupci tumor_AF, strand_bias, MANE_SELECT nechat tečky
+<li><h5>Translokace, Přestavby</h5></li>
 sloupce duplicated, mapped, on_target 
     <ul><li>tečky na čárky</ul></li>
     <ul><li>nastavit buňky na procenta</ul></li>
 </li>
-
-<li><h5>přestavby</h5></li>
-duplicated
-mapped
-on targed
-
-
 <br>
 <li>
 v class:

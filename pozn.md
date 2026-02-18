@@ -24,12 +24,11 @@ pozor na desetinné čárky a tečky - někde je potřeba zachovat tečky, jinde
 
 <li>
 někdy se objeví html značka v souboru z keeperu (řešeno ve skriptu, ale někdy to nefunguje a musí se to opravit ručně!)
-html < br > a < div > se objevuje i v komentářích, ale nevadí při merge, stačí smazat až ve výsledných souborech
+html br, div nebo &nbsp;  a se objevuje i v komentářích, ale nevadí při merge, stačí smazat až ve výsledných souborech
 v některych souborech celý řádek  jen html kod (i na LYNX)
 </li>
 
-<h5>SNV</h5>
-<li>
+<li><h5>SNV</h5></li>
 sloupce af, eur_af, gnomad_af, gnomad_nfe_af, max_af
 <ul><li>místo prázdných hodnot doplnit 0,000 kvůli filtrování</li></ul>
 <ul><li>místo teček čárky</li></ul>
@@ -38,6 +37,13 @@ sloupce duplicated, mapped, on_target
     <ul><li>tečky na čárky</ul></li>
     <ul><li>nastavit buňky na procenta</ul></li>
 </li>
+
+<li><h5>přestavby</h5></li>
+duplicated
+mapped
+on targed
+
+
 <br>
 <li>
 v class:

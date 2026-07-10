@@ -37,12 +37,12 @@ DIAGNOSIS = DIAGNOSIS.upper()
 dx_upper = DIAGNOSIS.upper()
 dx_lower = DIAGNOSIS.lower()
 
-print(f"Diagnosis: {dx_upper}, List: seznam_{dx_lower}.csv, Input file: {dx_upper}")
+print(f"Diagnosis: {dx_upper}, List: seznam_{dx_lower}_pavlova.csv, Input file: {dx_upper}")
 
 # --- Folder paths ---
 #folder = root / f'TRANSLOKACE_PRESTAVBA_{dx_upper}'
 folder = root / f'{dx_upper}'
-seznam = root / f'seznam_{dx_lower}.csv'
+seznam = root / f'seznam_{dx_lower}_pavlova.csv' ######################### seznam samples/runs
 timestamp = datetime.now().strftime("%d%m%Y")
 output_file = root / 'output' / f'merged_data_translocations_{dx_lower}_{timestamp}.xlsx'
 

@@ -39,6 +39,6 @@ aktivuje venv a spustí merge a separate scripty
 - stáhnout soubory z Lynx serveru skriptem **download.sh**
 - pokud něco spadne, opravit název v seznamu vzorků v **seznam_*.csv**
 - zjistit názvy sloupců ve stažených souborech skriptem **column.sh**, přidat chybějící sloupce do skriptu **merge_*.py** nebo **separate_*.py**
-- spustit **run.sh** a vybrat diagnózu
+- spustit **run.sh** a vybrat diagnózu nebo spustit jednotlivé skripty - **merge_cna.py**, **merge_snv.py**, **separate_rearrang.py**, **separate_transl.py**
 - pomocí **control_*.py** skriptů zkontrolovat, jestli jsou tam všechny vzorky a sedí počet řádků (ne u translokací a přestaveb)
 - upravit excely (změnit tečky na čárky, ...) podle poznámek **pozn.md**

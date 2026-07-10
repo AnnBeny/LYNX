@@ -47,7 +47,7 @@ logging.info("Spuštění skriptu")
 
 # ---- Folder with files ----
 folder = root / dx_upper
-csv_file = root / f'seznam_{dx_lower}.csv'
+csv_file = root / f'seznam_{dx_lower}_pavlova.csv' ############## control name of csv file
 timestamp = datetime.now().strftime("%d%m%Y")
 output_file = root / 'output' / f'merged_data_cna_{dx_lower}_{timestamp}.xlsx'
 

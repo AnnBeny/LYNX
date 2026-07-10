@@ -36,10 +36,10 @@ DX_LO="${DX,,}"            # all/dlbcl/cll
 
 ROOT="/mnt/hdd2/anna/LYNX"
 STAMP="$(date +%F)"
-DEST="$ROOT/raw_$(lc "$DX")_$(lc "$DATA_KIND")_$STAMP"
-SERVER="keeper@lynx.ceitec.muni.cz"
+DEST="$ROOT/raw_$(lc "$DX")_$(lc "$DATA_KIND")_$STAMP" # raw data directory
+SERVER="keeper@lynx-dev.ceitec.muni.cz" # server, ssh key id_rsa send to Kuba/Tom
 #SCRIPT_DIR="$(cd -- "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
-LIST="$ROOT/seznam_$(lc "$DX").csv"
+LIST="$ROOT/seznam_$(lc "$DX")_pavlova.csv" ################# list of runs/samples to download, could be change
 
 echo "OUTPUT=$DEST"
 #echo "BASH_SOURCE=$BASH_SOURCE"
